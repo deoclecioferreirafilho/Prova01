@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>prova-23-04-2019</title>
+</head>
+<body>
+    <h3>Uma pessoa com <span id="altura">1.60</span> m e <span id="peso">62.5</span> kg possui IMC de <span id="imc"></span>kg/m2!</h3>
+    
+       <p></p> <button id="botao1"> Calcular</button></p> </p>
+        
+
+    <script>
+           
+            var aaltura = document.getElementById("altura");
+            var apeso = document.getElementById("peso");
+            var aimc = document.getElementById("imc");
+            var eBotao = document.getElementById("botao");
+
+          
+            eBotao = addEventListener("click", calcular);
+
+            aaltura.contentEditable = true;
+            apeso.contentEditable = true;
+            
+            
+            
+            function calcular()
+                {
+                var a = Number(aaltura.textContent);
+                var b = Number(apeso.textContent);
+                var r = b/(a*a);
+                aimc.textContent = r;
+                }
+            
+    </script>
+
+</body>
+
+</html>
